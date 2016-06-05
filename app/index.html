@@ -4,12 +4,56 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <script src="lib/webcomponentsjs/webcomponents.js"></script>
   <link rel="import" href="lib/polymer/polymer.html">
-  <link rel="import" href="lib/core-component-page/core-component-page.html">
+  <link rel="import" href="lib/paper-toolbar/paper-toolbar.html">
+  <link rel="import" href="lib/paper-button/paper-button.html">
+  <!-- <link rel="import" href="lib/core-component-page/core-component-page.html"> -->
+
+  <style is="custom-style">
+  paper-toolbar.titlebar {
+  	--paper-toolbar-background: #FF4800;
+
+  	--paper-toolbar-title: {
+  		font-weight: bold;
+  		color: white;
+  	}
+  }
+
+  paper-button.notification {
+  	background-color: #FF4800;
+  	font-weight: normal;
+  	color: white;
+  	/*padding: 100%;*/
+  }
+
+  paper-button.notification[toggles][active] {
+  	font-weight: bold;
+  }
+
+  /* paper-material.CentralArea {
+  	width: 100%;
+  	height: 100%;
+  	padding: 100%;
+  } */
+  </style>
 
 </head>
 <body unresolved>
+<!-- <body async> -->
 
-  <core-component-page></core-component-page>
+	<!-- We don't need at this time -->
+  <!-- <iron-component-page></iron-component-page> -->
 
+  <!-- Defining the toolbar showing the app's title -->
+  <paper-toolbar class="titlebar"><span class="title">Analisador de tráfego da Supervia</span></paper-toolbar>
+
+	<!-- <paper-material class="CentralArea" id="paper-material-button" elevation=0> -->
+	<!-- <app-layout> -->
+  
+	<div align=center style="padding-top: 100px;">
+  <paper-button class="notification" toggles>Ativar a notificação!</paper-button>
+  </div>
+
+  <!-- </paper-material> -->
+  <!-- </app-layout> -->
 </body>
 </html>

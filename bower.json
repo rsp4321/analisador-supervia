@@ -1,11 +1,13 @@
 {
   "name": "analisador-supervia",
   "description": "A train system's traffic analyzer based on Supervia's Train System (a brazilian train company located at Rio de Janeiro).",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.4"
+    "polymer": "Polymer/polymer#1.5.0",
+    "iron-component-page": "PolymerElements/iron-component-page#1.1.6",
+    "paper-toolbar": "PolymerElements/paper-toolbar#^1.1.4"
   },
   "devDependencies": {
-    "closure-compiler" : "http://dl.google.com/closure-compiler/compiler-latest.zip"
+    "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip"
   }
 }
